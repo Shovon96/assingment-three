@@ -4,12 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fruit Brust</title>
+    <!-- favicon link -->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <!-- DaisyUI  and tailwind link -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- font awsome link -->
     <script src="https://kit.fontawesome.com/bca3ec24e7.js" crossorigin="anonymous"></script>
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700;900&display=swap" rel="stylesheet">
     <!-- Custom Tailwin Css link -->
     <script>
         tailwind.config = {
@@ -17,6 +23,7 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
+                        'color-bg': 'rgba(248, 85, 89, 1)'
                     }
                 }
             }
@@ -24,6 +31,9 @@
     </script>
     <!-- Custom CSS -->
     <style>
+        .lato{
+            font-family: 'Lato', sans-serif;
+        }
 
     </style>
 </head>
@@ -31,8 +41,28 @@
 <body>
             <!-- header Section Start -->
     <header class="container mx-auto">
+        <!-- Navbar menu -->
         <nav>
-            <h1>hello world</h1>
+            <div class="navbar bg-color-bg rounded-full mt-5 p-4 flex justify-between text-white items-center">
+                <div>
+                    <ul>
+                        <li class="space-x-5 ml-12 text-sm">
+                            <a href="">Home</a>
+                            <a href="">About Us</a>
+                            <a href="">Shop</a>
+                            <a href="">All Fruite</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="gap-5">
+                    <img src="images/logo.png" class="h-12" alt="">
+                    <span class="text-3xl font-bold lato">Fruit Burst</span>
+                </div>
+                <form action="" class="flex items-center">
+                    <input type="text" placeholder="Search hear..." class="border-none py-3 text-black px-8 rounded-tl-full rounded-bl-full">
+                    <button class="btn bg-white mr-12 rounded-tr-full rounded-br-full"><i class="fa-solid fa-magnifying-glass fs-5"></i></button>
+                </form>
+              </div>
         </nav>
     </header>
             <!-- Main Section is start -->
