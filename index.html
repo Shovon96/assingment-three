@@ -31,22 +31,41 @@
     </script>
     <!-- Custom CSS -->
     <style>
-        .lato{
+        .lato {
             font-family: 'Lato', sans-serif;
         }
-
+        .bg-gradient{
+           background:linear-gradient(180deg, #121212 0%, rgba(18.06, 18.06, 18.06, 0) 100%)
+        }
     </style>
 </head>
 
 <body>
-            <!-- header Section Start -->
+    <!-- header Section Start -->
     <header class="container mx-auto">
         <!-- Navbar menu -->
         <nav>
-            <div class="navbar bg-color-bg rounded-full mt-5 p-4 flex justify-between text-white items-center">
+            <div
+                class="navbar lg:bg-color-bg rounded-full lg:mt-5 p-8 lg:p-4 flex flex-row-reverse lg:flex-row justify-between text-white items-center">
+                <!-- small screen navbar -->
+                <div class="dropdown block lg:hidden">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-black" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </label>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content p-2 text-black bg-slate-100 z-50">
+                        <li"><a>Home</a></li>
+                        <li"><a>About Us</a></li>
+                        <li"><a>Shop</a></li>
+                        <li"><a>All Fruite</a></li>
+                    </ul>
+                </div>
                 <div>
                     <ul>
-                        <li class="space-x-5 ml-12 text-sm">
+                        <li class="space-x-5 ml-12 text-sm hidden lg:block">
                             <a href="">Home</a>
                             <a href="">About Us</a>
                             <a href="">Shop</a>
@@ -55,24 +74,115 @@
                     </ul>
                 </div>
                 <div class="gap-5">
-                    <img src="images/logo.png" class="h-12" alt="">
-                    <span class="text-3xl font-bold lato">Fruit Burst</span>
+                    <img src="images/logo.png" class="h-8 lg:h-12" alt="">
+                    <span class="text-xl font-semibold text-black  lg:text-white lg:text-3xl lg:font-bold lato">Fruit
+                        Burst</span>
                 </div>
-                <form action="" class="flex items-center">
-                    <input type="text" placeholder="Search hear..." class="border-none py-3 text-black px-8 rounded-tl-full rounded-bl-full">
-                    <button class="btn bg-white mr-12 rounded-tr-full rounded-br-full"><i class="fa-solid fa-magnifying-glass fs-5"></i></button>
+                <form action="" class="hidden lg:flex  items-center">
+                    <input type="text" placeholder="Search hear..."
+                        class="border-none py-3 text-black px-8 rounded-tl-full rounded-bl-full">
+                    <button class="btn bg-white mr-12 rounded-tr-full rounded-br-full"><i
+                            class="fa-solid fa-magnifying-glass fs-5"></i></button>
                 </form>
-              </div>
+            </div>
         </nav>
     </header>
-            <!-- Main Section is start -->
+    <!-- Main Section is start -->
     <main class="container mx-auto">
         <!-- Slider or carousel Section -->
         <section>
-            
+            <div class="carousel w-full lg:mt-14">
+                <!-- Slider 1 -->
+                <div id="slide1" class="carousel-item relative w-full">
+                    <div>
+                        <img src="images/banner1.png" class="w-full relative bg-gradient" />
+                    </div>
+                    <div class="absolute text-center w-full text-white space-y-2 lg:space-y-5">
+                            <h1 class="mt-5 text-2xl lg:mt-20 lg:text-5xl font-bold">xotic tastes at your <br>
+                                doorstep</h1>
+                            <p>We supply highly quality organic products</p>
+                            <button class="btn bg-color-bg border-none text-white">Shop now</button>
+                    </div>
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn btn-circle">❮</a> 
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <!-- Slider 2 -->
+                <div id="slide2" class="carousel-item relative w-full">
+                    <div>
+                        <img src="images/banner2.png" class="w-full relative bg-gradient" />
+                    </div>
+                    <div class="absolute text-center w-full text-white space-y-2 lg:space-y-5">
+                            <h1 class="mt-5 text-2xl lg:mt-20 lg:text-5xl font-bold">xotic tastes at your <br>
+                                doorstep</h1>
+                            <p>We supply highly quality organic products</p>
+                            <button class="btn bg-color-bg border-none text-white">Shop now</button>
+                    </div>
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a> 
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <!-- Slider 3 -->
+                <div id="slide3" class="carousel-item relative w-full">
+                    <div>
+                        <img src="images/banner3.png" class="w-full relative bg-gradient" />
+                    </div>
+                    <div class="absolute text-center w-full text-white space-y-2 lg:space-y-5">
+                            <h1 class="mt-5 text-2xl lg:mt-20 lg:text-5xl font-bold">xotic tastes at your <br>
+                                doorstep</h1>
+                            <p>We supply highly quality organic products</p>
+                            <button class="btn bg-color-bg border-none text-white">Shop now</button>
+                    </div>
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle">❮</a> 
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <!-- Slider 4 -->
+                <div id="slide4" class="carousel-item relative w-full">
+                    <div>
+                        <img src="images/banner4.png" class="w-full relative bg-gradient" />
+                    </div>
+                    <div class="absolute text-center w-full text-white space-y-2 lg:space-y-5">
+                            <h1 class="mt-5 text-2xl lg:mt-20 lg:text-5xl font-bold">xotic tastes at your <br>
+                                doorstep</h1>
+                            <p>We supply highly quality organic products</p>
+                            <button class="btn bg-color-bg border-none text-white">Shop now</button>
+                    </div>
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle">❮</a> 
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+              </div>
+                    <!-- Fruites are top position  -->
+              <div class="hidden lg:flex justify-between text-center shadow-lg rounded-xl mx-36 absolute gap-12 -mt-40 bg-slate-100 p-16 text-sm">
+                 <div>
+                    <img src="images/fruit1.png" alt="">
+                    <p>Grap</p>
+                 </div>
+                 <div>
+                    <img src="images/fruit2.png" alt="">
+                    <p>Orange</p>
+                 </div>
+                 <div>
+                    <img src="images/fruit3.png" alt="">
+                    <p>Mango</p>
+                 </div>
+                 <div>
+                    <img src="images/fruit4.png" alt="">
+                    <p>Strawberry</p>
+                 </div>
+                 <div>
+                    <img src="images/fruit5.png" alt="">
+                    <p>Pomegranate</p>
+                 </div>
+              </div>
         </section>
     </main>
-            <!-- Footer Section is start -->
+    <!-- Footer Section is start -->
     <footer>
 
     </footer>
